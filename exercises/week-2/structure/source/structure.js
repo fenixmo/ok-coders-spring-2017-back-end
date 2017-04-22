@@ -4,11 +4,17 @@
 // -  Use an `if-else` statement to print out 'Age is 21 or older' when the age is 21 or over
 // -  Otherwise print out 'Age is under 21'. Change the value of age to be sure your statement is working
 
+var age = 27;
+if(age >= 21) {
+  console.log('Age is 21 or older');
+}else {
+  console.log('Age is under 21');
+}
 
 // We can check the type of the value that a variable currently contains using the `typeof` keyword
 // It evaluates to a string describing the type. Comment out the following line to see:
 
-// console.log( typeof 'hello' )
+ console.log( typeof 'hello' )
 
 // 2. Create a variable named `unknown` and assign a number to it.
 // -  Use if-else-if statements to manipulate the variable in different ways depending on its type
@@ -17,7 +23,12 @@
 // -  If the variable is undefined: log to the console that the variable is undefined
 // -  Change the value you assign to the variable to make sure each branch of the if statement is executed
 
+var unknown = 42;
+if ( unknown == Number) {
+  console.log('unknown is number');
+}
 
+console.log(unknown);
 // We looked at while loops in our class material but there are also for loops.
 // A for loop has  an initialization, an end condition, and an iteration followed by a code block.
 // The conditions and iteration statements are separated by semicolons and are inside a parenthesis.
@@ -33,9 +44,9 @@
 // -  Notice that we use var to initialize the for loop variable `i`
 // -  What should the loop print out?
 
-for ( var i = 0; i < 100; i = i + 1; ) {
-
-}
+// for ( var i = 0; i < 100; i = i + 1 ) {
+//   console.log(i);
+// }
 
 // 4. Use a for loop to loop over the numbers 100 to 200, incrementing by 10 each time
 // -  Confirm that your for loop is working by logging the loop variable inside the code block
